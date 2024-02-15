@@ -1,0 +1,89 @@
+.information-area {
+  padding: 2em 0;
+  background: #f9f9f9;
+  grid-gap: 1em;
+  background-image: url("https://media.allure.com/photos/5e46c3995993fc0009700fc4/16:9/w_2560%2Cc_limit/clouds.jpg");
+  background-color: aliceblue;
+}
+.information-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1em;
+  text-align: justify;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.information-title {
+  font-size: 2.5em;
+  margin-bottom: 1em;
+  color: black;
+}
+
+.information-container p {
+  padding: 10px;
+  margin-bottom: 15px;
+  background-color: aliceblue;
+
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.information-container p:hover {
+  background-color: #117964;
+  color: white;
+}
+
+.information-container img {
+  align-self: flex-start;
+}
+#testimonials {
+  padding: 5rem 0;
+  background: rgba(243, 243, 243);
+}
+
+.testimonial-title {
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: 400;
+  color: black;
+}
+
+.testimonial-container {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.4rem;
+  padding: 1rem;
+}
+
+.testimonial-box .checked {
+  color: #ff9529;
+}
+
+.testimonial-box .testimonial-text {
+  margin: 1rem 0;
+  color: grey;
+}
+
+.testimonial-box {
+  text-align: center;
+  padding: 1rem;
+}
+
+.customer-photo img {
+  display: block;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  margin: auto;
+}
+
+@media (max-width: 500px) {
+  .testimonial-container {
+    flex-direction: column;
+    text-align: center;
+  }
+}

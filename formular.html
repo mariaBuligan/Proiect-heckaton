@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Styles/formular.css" />
+    <link rel="stylesheet" href="Styles/style.css" />
+    <title>Formulare inscriere</title>
+  </head>
+
+  <body class="clouds">
+    <nav class="navbar">
+      <div class="navbar-container container">
+        <input type="checkbox" />
+        <label for="toggleMenu" class="hamburger-lines">
+          <span class="line line1"></span>
+          <span class="line line2"></span>
+          <span class="line line3"></span>
+        </label>
+        <ul class="menu-items">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="panouri.html">Panouri</a></li>
+          <li><a href="informatii.html">Informatii</a></li>
+          <li><a href="formular.html">Formular</a></li>
+        </ul>
+        <h1 class="logo">LB</h1>
+      </div>
+    </nav>
+
+    <section class="showcase-area">
+      <div class="showcase-container">
+        <h1 class="main-title">Solaris</h1>
+        <p>Make the world a greener place</p>
+      </div>
+    </section>
+    <br /><br />
+    <h2 class="form">De ce sa fii voluntar?</h2>
+    <ul>
+      <div class="cadran">
+      <li class="lista_li">Poti face parte dintr-o echipa care ajuta la dezvoltarea </li>
+      <li class="lista_li">Vei avea sansa de a prinde experienta intr-un domeniu de viitor</li>
+      <li class="lista_li">Nu iti trebuie experiente, doar entuziasm</li>
+      <li class="lista_li">Oportunitatea de a intalnii persoane pasionate de acest domeniu</li>
+  </div>
+  </ul>
+  
+  
+  <h2 class="form">Inscrie-te acum daca ai nevoie de finantare, iar Solaris ti-o ofera:</h2>
+  
+  
+  
+   <div class="button">
+   <button type="button" onclick="document.getElementById('scris').style.display='block'">Inscrie-te</button>
+   </div>
+  
+       <div id="scris" style="display:none">     
+   <div class="cadran-formular"> 
+       <h2>Informatii personale:</h2><br>
+      <form action="mailto:maria.buligan@stud.acs.upb.ro">
+          <label for="fname" >First name:</label>
+          <input type="text" id="fname" name="fname" placeholder="Nume" required>
+          <br><br><label for="lname">Last name:</label>
+          <input type="text" id="lname" name="lname" placeholder="Prenume" required>
+          <br><br><label for="telefon">Numar de telefon:</label>
+          <input type="tel" id="nr" name="telefon" placeholder="07..." pattern="[0-9]{10}" required><br>
+          <br><label for="adr">Adresa</label>
+          <input type="text" id="adr" name="adresa" rows=3 required><br>
+          <input type="submit" value="Submit">
+        </form>
+       <h3>Te vom contacta personal pentru mai multe detalii</h3>
+      </div>
+   </div>
+
+  
+  <div class="button">
+      <button type="button" onclick="document.getElementById('scris2').style.display='block'">Voluntariat</button>
+   </div>
+  </div>
+  
+   <div id="scris2" style="display:none">
+      <br><br>
+  
+   <div class="cadran-formular">
+      <h2>Informatii personale:</h2><br>
+      <form action="mailto:maria.buligan@stud.acs.upb.ro">
+          <label for="fname" >First name:</label><br>
+          <input type="text" id="fname" name="fname" placeholder="Nume" required><br>
+          <label for="lname">Last name:</label><br>
+          <input type="text" id="lname" name="lname" placeholder="Prenume" required><br><br>
+          <label for="telefon">Numar de telefon:</label><br>
+          <input type="tel" id="nr" name="telefon" placeholder="07..." pattern="[0-9]{10}" required><br><br>
+          <input type="submit" value="Submit">
+        </form>
+      <h3>Spune-ne cateva cuvinte despre tine:</h3><br>
+        <form action="mailto:maria.buligan@stud.acs.upb.ro"> 
+        <textarea id="text" name="text" rows="10" cols="50"></textarea><br>
+        <input type="submit" value="Submit">
+        </form>
+   </div>
+   </div>
+  
+  </body>
+  <section id="footer">
+    <h2>Solaris ONG &copy; all rights reserved</h2>
+  </section>
+</html>
